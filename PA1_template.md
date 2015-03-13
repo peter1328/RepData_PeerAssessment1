@@ -1,4 +1,6 @@
 # Reproducible Research: Peer Assessment 1
+AUTHOR NAME BLINDED FOR PEER ASSESSMENT :)  
+13 Mar 2015  
 
 
 ## Loading and preprocessing the data
@@ -46,7 +48,7 @@ names(stepsday)[2] <- "meanSteps"
 hist(stepsday$meanSteps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](PA1_template_files/figure-html/histogram_with_missings-1.png) 
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 
@@ -96,7 +98,7 @@ xyplot(stepsinterval$meanSteps ~ stepsinterval$interval, type = "l",
        xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/steps_per_interval-1.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -197,7 +199,7 @@ names(stepsday_imp)[2] <- "meanSteps"
 hist(stepsday_imp$meanSteps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+![](PA1_template_files/figure-html/histogram_imputed_data-1.png) 
 
 ```r
 #Report mean number of steps taken each day
@@ -297,6 +299,6 @@ xyplot(mSteps$meanSteps ~ mSteps$interval | mSteps$weekdays,
        xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png) 
+![](PA1_template_files/figure-html/steps_weekday_weekend-1.png) 
 
 ## Are there differences in activity patterns between weekdays and weekends?
