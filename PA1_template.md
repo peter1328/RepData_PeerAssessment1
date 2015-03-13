@@ -300,5 +300,3 @@ xyplot(mSteps$meanSteps ~ mSteps$interval | mSteps$weekdays,
 ```
 
 ![](PA1_template_files/figure-html/steps_weekday_weekend-1.png) 
-
-## Are there differences in activity patterns between weekdays and weekends?
