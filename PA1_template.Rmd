@@ -87,7 +87,7 @@ sum(is.na(ass1data))
 
 ```{r}
 
-#Impute missing values with daily means
+#Since this course work is not a high-stakes isuation, I will use a basic imputation method and just impute missing values with daily means
 ass1data_imp <- ass1data
 str(ass1data_imp)
 for (i in 1:nrow(ass1data_imp)) {
